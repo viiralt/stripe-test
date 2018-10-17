@@ -4,7 +4,7 @@ import { CardNumberElement, CardExpiryElement, CardCVCElement, PostalCodeElement
 class CardSection extends React.Component {
   render() {
     return (
-      <form>
+      <React.Fragment>
         <label>
           Name on card
           <input name="name" type="text" placeholder="Jane Doe" required />
@@ -21,7 +21,7 @@ class CardSection extends React.Component {
         <label>
           <PostalCodeElement placeholder="SW1A 2AA" />
         </label>
-      </form>
+      </React.Fragment>
     );
   }
 }
