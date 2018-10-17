@@ -9,8 +9,7 @@ class CheckoutForm extends React.Component {
 
   generateToken = e => {
     e.preventDefault();
-    // Within the context of `Elements`, this call to createToken knows which Element to
-    // tokenize, since there's only one in this group.
+    //  ! Within the context of `Elements`, this call to createToken knows which Element to tokenize, since there's only one in this group
     this.props.stripe.createToken({ name: 'Jenny Rosen' }).then(({ token }) => {
       console.log('Received Stripe token:', token);
       this.submitPayment(token);
@@ -41,5 +40,5 @@ class CheckoutForm extends React.Component {
     );
   }
 }
-
+// ! injectStripe === HOC, which interacts with Stripe.js to create sources or tokens
 export default injectStripe(CheckoutForm);
