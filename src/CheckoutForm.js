@@ -34,7 +34,7 @@ class CheckoutForm extends React.Component {
       <div>
         <form onSubmit={this.generateToken}>
           <CardSection />
-          <button>confirm payment</button>
+          <button>Securely pay & confirm</button>
         </form>
       </div>
     );

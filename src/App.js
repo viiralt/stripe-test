@@ -7,8 +7,7 @@ class App extends Component {
   render() {
     return (
       <StripeProvider apiKey="pk_test_TYooMQauvdEDq54NiTphI7jx">
-        <div className="example">
-          <h1>React Stripe Elements Example</h1>
+        <div>
           <Elements>
             <CheckoutForm />
           </Elements>
